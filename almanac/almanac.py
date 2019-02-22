@@ -1,9 +1,10 @@
 from time import strptime
 
 from skyfield import almanac
-from skyfield import api
 from skyfield import constants
-from skyfield.api import load
+from skyfield.api import Loader
+
+load = Loader('/tmp/skyfield-data')
 
 PLANETS = load('de421.bsp')
 
@@ -12,7 +13,7 @@ class AlmanacService(object):
     timescale = None
 
     def __init__(self):
-        self.timescale = api.load.timescale()
+        self.timescale = load.timescale()
 
     def search_seasons(self, from_date_string=None, to_date_string=None):
         from_time = self.parse_date_time(from_date_string)

@@ -5,7 +5,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 # NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 
-version = '1.0.0'
+version = '1.0.1'
 
 setup(name='almanac',
       version=version,
@@ -32,7 +32,7 @@ setup(name='almanac',
       maintainer='cghislai',
       maintainer_email='charlyghislain@gmail.com',
       packages=['almanac'],
-      requires=['skyfield(>=1.9)'],
+      requires=['skyfield(>=1.10)'],
       extras_require={'Flask': ['flask']},
       entry_points={
           'console_scripts':

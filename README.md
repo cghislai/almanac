@@ -7,5 +7,7 @@ some astronomical events.
 
 Install it with pip, then launch `almanac-server`.
 
+You can also use the docker image:
+`docker run cghislai/almanac`
 
 [skyfield]: https://rhodesmill.org/skyfield/
